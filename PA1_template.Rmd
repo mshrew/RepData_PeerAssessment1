@@ -82,14 +82,7 @@ mean(stepsTotalPerDay_NoMissing)
 median(stepsTotalPerDay_NoMissing)
 ```
 
-Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
-
-To recap, the original mean and median are:
-
-```{r,echo=TRUE}
-mean(stepsperday)
-median(stepsperday)
-```
+These values are larger than the estimates from the first part of the assignment. Imputing missing data on the estimates of the total daily number of steps increases the mean and median.
 
 Are there differences in activity patterns between weekdays and weekends?
 
