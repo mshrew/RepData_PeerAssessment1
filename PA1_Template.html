@@ -179,13 +179,7 @@ stepsTotalPerDay_NoMissing &lt;- tapply(data_NoMissing$steps, data_NoMissing$dat
 <pre><code>## [1] 831513.3</code></pre>
 <pre class="r"><code>median(stepsTotalPerDay_NoMissing)</code></pre>
 <pre><code>## [1] 831513.3</code></pre>
-<p>Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?</p>
-<p>To recap, the original mean and median are:</p>
-<pre class="r"><code>mean(stepsperday)</code></pre>
-<pre><code>## [1] NA</code></pre>
-<pre class="r"><code>median(stepsperday)</code></pre>
-<pre><code>## &lt;NA&gt; 
-##   NA</code></pre>
+<p>These values are larger than the estimates from the first part of the assignment. Imputing missing data on the estimates of the total daily number of steps increases the mean and median.</p>
 <p>Are there differences in activity patterns between weekdays and weekends?</p>
 <p>A new factor variable is created in the dataset with two levels - “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.</p>
 <pre class="r"><code>data_NoMissing$date &lt;- as.Date(strptime(data_NoMissing$date, format=&quot;%Y-%m-%d&quot;))   
